@@ -1,32 +1,69 @@
 # README_template
 Template with some basic markdown syntax for a solid README.md file
 
-# Foobar
+# Project Title
 
-Foobar is a Python library for dealing with word pluralization.
+A nice project with a nice description
 
-## Installation
+---
+## Requirements
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+For development, you will only need Node.js and a node global package, Yarn, installed in your environement.
 
-```bash
-pip install foobar
-```
+### Node
+- #### Node installation on Windows
 
-## Usage
+  Just go on [official Node.js website](https://nodejs.org/) and download the installer.
+Also, be sure to have `git` available in your PATH, `npm` might need it (You can find git [here](https://git-scm.com/)).
 
-```python
-import foobar
+- #### Node installation on Ubuntu
 
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
-```
+  You can install nodejs and npm easily with apt install, just run the following commands.
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+      $ sudo apt install nodejs
+      $ sudo apt install npm
 
-Please make sure to update tests as appropriate.
+- #### Other Operating Systems
+  You can find more information about the installation on the [official Node.js website](https://nodejs.org/) and the [official NPM website](https://npmjs.org/).
 
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+If the installation was successful, you should be able to run the following command.
+
+    $ node --version
+    v8.11.3
+
+    $ npm --version
+    6.1.0
+
+If you need to update `npm`, you can make it using `npm`! Cool right? After running the following command, just open again the command line and be happy.
+
+    $ npm install npm -g
+
+###
+### Yarn installation
+  After installing node, this project will need yarn too, so just run the following command.
+
+      $ npm install -g yarn
+
+---
+
+## Install
+
+    $ git clone https://github.com/YOUR_USERNAME/PROJECT_TITLE
+    $ cd PROJECT_TITLE
+    $ yarn install
+
+## Configure app
+
+Open `a/nice/path/to/a.file` then edit it with your settings. You will need:
+
+- A setting;
+- Another setting;
+- One more setting;
+
+## Running the project
+
+    $ yarn start
+
+## Simple build for production
+
+    $ yarn build
